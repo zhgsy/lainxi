@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frag.BlankFragment"
+    android:background="#f0f">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="查找"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:fillViewport="true">
+        <RadioGroup
+            android:id="@+id/tradio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/bbun1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/app_tbun1"/>
+            <RadioButton
+                android:id="@+id/bbun2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/app_tbun2"/>
+            <RadioButton
+                android:id="@+id/bbun3"
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:text="@string/app_tbun3"/>
+        </RadioGroup>
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"></android.support.v4.view.ViewPager>
+</LinearLayout>
+    
+</FrameLayout>
